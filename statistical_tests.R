@@ -1,14 +1,3 @@
-# ============================================================================
-# STATISTICAL TESTS
-# ============================================================================
-
-# ============================================================================
-# 3.1 IRIS DATASET - ANOVA TEST
-# ============================================================================
-
-# ANOVA test for Sepal Length
-# Perform an ANOVA to check if there are statistically significant differences
-# in sepal lengths among different species.
 
 anova_results <- aov(Sepal.Length ~ Species, data = iris)
 
@@ -18,12 +7,6 @@ cat("ANOVA Results: Sepal Length by Species\n")
 cat("========================================\n")
 print(summary(anova_results))
 cat("\n")
-
-# ============================================================================
-# 3.2 MTCARS DATASET - CORRELATION TEST
-# ============================================================================
-
-# Correlation test between horsepower (hp) and miles per gallon (mpg)
 
 correlation_results <- cor.test(mtcars$hp, mtcars$mpg)
 

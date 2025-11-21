@@ -2,23 +2,9 @@
 library(ggplot2)
 library(dplyr)
 
-# ============================================================================
-# 1. IRIS DATASET ANALYSIS
-# ============================================================================
-
-# Structure and Summary
-# ---------------------
-
 # Structure of the Iris dataset
 str(iris)
-
-# Summary of the Iris dataset
 summary(iris)
-
-# Visualizations
-# --------------
-
-# Pair plot of the Iris dataset
 pairs(iris[, 1:4], main = "Pair plot of Iris Dataset")
 
 # Boxplot of Sepal Length by Species
@@ -28,21 +14,11 @@ ggplot(iris, aes(x = Species, y = Sepal.Length)) +
   xlab("Species") +
   ylab("Sepal Length (cm)")
 
-# ============================================================================
-# 2. MTCARS DATASET ANALYSIS
-# ============================================================================
-
-# Structure and Summary
-# ---------------------
-
 # Structure of the Mtcars dataset
 str(mtcars)
 
 # Summary of the Mtcars dataset
 summary(mtcars)
-
-# Visualizations
-# --------------
 
 # Scatter plot of mpg vs hp
 ggplot(mtcars, aes(x = hp, y = mpg)) +
